@@ -1,0 +1,19 @@
+---
+title: "week3assign"
+author: "Lawrence Harman"
+date: "September 16, 2019"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+## Week 3 Assignment
+Example of of a plotly plot.
+
+```{r cars, message = FALSE}
+library(plotly)
+p <- plot_ly(economics, x = ~date, y = ~unemploy / pop)
+p
+```
